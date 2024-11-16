@@ -42,7 +42,7 @@ async def approve(_, m : Message):
         add_group(m.chat.id)
         await app.approve_chat_join_request(op.id, kk.id)
         img = random.choice(gif)
-        await app.send_video(kk.id,img, "**Hello {}!\nWelcome To {}\n\n__TO APPROVE YOUR REQUEST SEND /START TO THIS BOT                 Powerd By : @Elites_info __**".format(m.from_user.mention, m.chat.title))
+        await app.send_video(kk.id,img, "**Hello {}!\nWelcome To {}\n\n__TO APPROVE YOUR REQUEST SEND /START TO THIS BOT                                   Powerd By : @Elites_info __**".format(m.from_user.mention, m.chat.title))
         add_user(kk.id)
     except errors.PeerIdInvalid as e:
         print("user isn't start bot(means group)")
@@ -60,7 +60,7 @@ async def op(_, m :Message):
                 [
                     [
                         InlineKeyboardButton("🗯 Channel", url="https://t.me/Elites_info"),
-                        InlineKeyboardButton("💬 Support", url="https://t.me/vj_bot_disscussion")
+                        InlineKeyboardButton("💬 Support", url="https://t.me/Elites_info")
                     ],[
                         InlineKeyboardButton("➕ Add me to your Chat ➕", url="https://t.me/X_autoaccept_bot?startgroup")
                     ]

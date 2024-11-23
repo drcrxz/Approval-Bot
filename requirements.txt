@@ -1,4 +1,4 @@
-pyrogram
+git+https://github.com/KurimuzonAkuma/pyrogram
 TgCrypto
 pymongo[srv]
 Flask==2.2.2
